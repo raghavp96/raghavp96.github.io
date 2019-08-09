@@ -25,9 +25,11 @@ viewWorkExperienceList workExperienceEntries =
 view : Model -> Html Msg
 view model =
     div []
-        [ button [onClick (Redirect DefaultRoute)] [text "Home"]
-        , button [onClick (Redirect ProjectRoute)] [text "Projects"]
-        , viewWorkExperienceList Content.workExperience]
+        [ul [] [
+            li [] [a [href "/"] [text "Home"] ]
+            , li [] [a [href "project"] [text "Projects"] ]
+        ]
+        , viewWorkExperienceList Content.workExperience ]
 
 viewDocument : Model -> Document Msg
 viewDocument model = 

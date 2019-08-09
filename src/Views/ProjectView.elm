@@ -24,8 +24,10 @@ viewProjectEntryList projectEntries =
 view : Model -> Html Msg
 view model =
     div []
-        [ button [onClick (Redirect DefaultRoute)] [text "Home"]
-        , button [onClick (Redirect WorkRoute)] [text "Work Experience"]
+        [ ul [] [
+            li [] [a [href "/"] [text "Home"]]
+            , li [] [a [href "work"] [text "Work Experience"]]
+        ]
         , viewProjectEntryList Content.projects ]
 
 viewDocument : Model -> Document Msg

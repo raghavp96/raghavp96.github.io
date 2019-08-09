@@ -14,12 +14,13 @@ import Routing exposing (view)
 
 ---- PROGRAM ----
 
-
 main : Program () Model Msg
 main =
-    Browser.document
-        { init = \_ -> init
+    Browser.application
+        { init = init
         , view = view
         , update = update
         , subscriptions = always Sub.none
+        , onUrlChange = UrlChanged
+        , onUrlRequest = LinkClicked
         }

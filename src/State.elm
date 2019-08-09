@@ -1,16 +1,20 @@
 module State exposing (..)
 
+import Browser
+import Browser.Navigation as Nav
+import Url
+
 import Types exposing (..)
 import Content exposing (workExperience, projects)
 
-init : ( Model, Cmd Msg )
-init =
-    (   {  
-        route = DefaultRoute
+init : () -> Url.Url ->  Nav.Key -> ( Model, Cmd Msg )
+init flags url key =
+    (   {
+        key = key
+        , url = url
         , workIndex = 0
         , projectIndex = 0
         }, Cmd.none )
-
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -26,4 +30,14 @@ update msg model =
         RightProject -> 
             let projectLength = List.length Content.projects
             in ( { model | projectIndex = if model.projectIndex == projectLength - 1 then projectLength - 1 else model.projectIndex + 1 }, Cmd.none )
-        Redirect newRoute -> ( { model | route = newRoute }, Cmd.none )
+        LinkClicked urlRequest ->
+            case urlRequest of
+                Browser.Internal url ->
+                    ( model, Nav.pushUrl model.key (Url.toString url) )
+
+                Browser.External href ->
+                    ( model, Nav.load href )
+        UrlChanged url ->
+            ( { model | url = url }
+            , Cmd.none
+            )

@@ -1,15 +1,15 @@
 module Types exposing (..)
 
+import Browser
+import Browser.Navigation as Nav
+import Url
 import Html exposing (Html)
-
---  MODEL
 
 type alias Document msg =
   { title : String, body : List (Html msg)  }
 
-
 type Msg
-    = LeftWork | RightWork | LeftProject | RightProject | Redirect Route
+    = LeftWork | RightWork | LeftProject | RightProject | LinkClicked Browser.UrlRequest | UrlChanged Url.Url
 
 type alias WorkExperienceEntry = 
     { title : String, company : String, blurb: String, description : String, link : String}
@@ -21,7 +21,8 @@ type Route
     = DefaultRoute | WorkRoute | ProjectRoute | NotFoundRoute
 
 type alias Model =
-    { route : Route
+    { key : Nav.Key
+    , url : Url.Url
     , workIndex : Int
     , projectIndex : Int
     }

@@ -27,8 +27,10 @@ view model =
     div []
         [ img [ src "/logo.svg" ] []
         , h3 [] [ text "I'm currently on wrapping up my M.S (ye I'm big boi I know) in Computer Science at Northeastern University. I just graduated from Northeastern with a B.S. in Computer Science and Biology this past May!" ]
-        , button [onClick (Redirect WorkRoute)] [text "Work Experience"]
-        , button [onClick (Redirect ProjectRoute)] [text "Projects"]
+        , ul [] [
+            li [] [a [href "work"] [text "Work Experience"]]
+            , li [] [a [href "project"] [text "Projects"]]
+        ]
         , div []
             [ h3 [] [ text "Work Experience" ]
             , button [ onClick LeftWork ] [ text "<" ]

@@ -9,7 +9,9 @@ import Types exposing (..)
 view : Model -> Html Msg
 view model =
     div []
-        [ text "Not a valid route!" ]
+        -- [ button [onClick (Redirect DefaultRoute)] [text "Home"]
+        [ a [href "/"] [text "Home"]
+        , text "Not a valid route!" ]
 
 viewDocument : Model -> Document Msg
 viewDocument model = 
