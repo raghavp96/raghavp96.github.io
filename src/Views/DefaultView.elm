@@ -2,7 +2,7 @@ module Views.DefaultView exposing (..)
 
 import Array
 import Html exposing (Html, text, div, h2, h3, h4, p, button, ul, a, li, img)
-import Html.Attributes exposing (src, href)
+import Html.Attributes exposing (src, href, class)
 import Html.Events exposing (onClick)
 
 import Types exposing (..)
@@ -31,17 +31,17 @@ view model =
             li [] [a [href "work"] [text "Work Experience"]]
             , li [] [a [href "project"] [text "Projects"]]
         ]
-        , div []
+        , div [ class "row" ]
             [ h3 [] [ text "Work Experience" ]
-            , button [ onClick LeftWork ] [ text "<" ]
-            , div [] [ viewWorkExperienceSnippet (Maybe.withDefault { title = "", company = "", blurb = "", description = "", link = "" } (Array.get model.workIndex (Array.fromList Content.workExperience))) ]
-            , button [ onClick RightWork ] [ text ">" ]
+            , div [ class "nav"]  [ button [ onClick LeftWork ] [ text "<" ]]
+            , div [ class "nav-middle" ] [ viewWorkExperienceSnippet (Maybe.withDefault { title = "", company = "", blurb = "", description = "", link = "" } (Array.get model.workIndex (Array.fromList Content.workExperience))) ]
+            , div [ class "nav" ] [ button [ onClick RightWork ] [ text ">" ]]
             ]
-        , div []
+        , div [ class "row" ]
             [ h3 [] [text "Featured Projects"]
-            , button [ onClick LeftProject ] [ text "<" ]
-            , div [] [ viewProjectEntrySnippet (Maybe.withDefault { title = "", blurb = "", description = "" } (Array.get model.projectIndex (Array.fromList Content.projects))) ]
-            , button [ onClick RightProject ] [ text ">" ]
+            , div [ class "nav" ]  [ button [ onClick LeftProject ] [ text "<" ]]
+            , div [ class "nav-middle" ] [ viewProjectEntrySnippet (Maybe.withDefault { title = "", blurb = "", description = "" } (Array.get model.projectIndex (Array.fromList Content.projects))) ]
+            , div [ class "nav" ]  [ button [ onClick RightProject ] [ text ">" ]]
             ]
         ]
 

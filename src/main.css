@@ -24,3 +24,36 @@ img {
   margin: 20px 0;
   max-width: 200px;
 }
+
+.row {
+  margin-bottom: 20%;
+  margin-top: 10%;
+  clear: left;
+}
+
+.nav {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 40%;
+  text-align: center;
+}
+
+.nav-middle {
+  position: relative;
+  float: left;
+  width: 60%;
+  height: 40%;
+  text-align: center;
+}
+
+button {
+  background-color: rgba(113, 173, 115, 0.5);
+  border: none;
+  color: #4CAF50;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
