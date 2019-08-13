@@ -14,7 +14,10 @@ body {
   margin: 0;
   text-align: center;
   background-color: #FBF5E8;
+  background-color: #F5F3F0;
   color: #E25A53;
+  color: #D45F5A;
+  text-align: left;
 }
 
 h1 {
@@ -48,7 +51,7 @@ img {
 }
 
 .nav-heading {
-  color: #FDB35D;
+  color: #643853;
 }
 
 .nav-middle {
@@ -69,13 +72,6 @@ a:hover {
   text-decoration-style: double;
 }
 
-
-.header {
-  margin-bottom: 10%;
-  margin-top: 5%;
-  clear: left;
-}
-
 ul.menu {
   list-style-type: none;
 }
@@ -86,9 +82,14 @@ li.menu {
   margin-left: 10%;
 }
 
+.header {
+  color: #643853;
+  font-family: 'Lato';
+}
+
 button {
   border: none;
-  color: #FDB35D;
+  color: #643853;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;
@@ -100,7 +101,7 @@ button {
 
 button:hover {
   border: none;
-  color: #FDB50D;
+  color: #643853;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;

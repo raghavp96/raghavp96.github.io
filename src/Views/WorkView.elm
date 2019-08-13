@@ -11,7 +11,7 @@ import Views.Components.Menu exposing (view)
 viewWorkExperience: WorkExperienceEntry -> Html Msg
 viewWorkExperience workExperienceEntry =
     div [] [ 
-        h2 [] [ text workExperienceEntry.company ], 
+        h2 [ class "header" ] [ text workExperienceEntry.company ], 
         h3 [] [ text workExperienceEntry.title ], 
         div [] [
             p [] [ text workExperienceEntry.description ]]]

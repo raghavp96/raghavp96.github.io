@@ -1,7 +1,7 @@
 module Views.DefaultView exposing (..)
 
 import Array
-import Html exposing (Html, text, div, br, h2, h3, h4, button)
+import Html exposing (Html, text, div, br, h2, h3, h4, h5, button)
 import Html.Attributes exposing (src, href, class)
 import Html.Events exposing (onClick)
 
@@ -28,11 +28,11 @@ view model =
         Views.Components.Menu.view, 
         div [ class "row" ] [
             br [][], 
-            h2 [] [ text "Hi, I'm Raghav (short for Raghavprasanna Rajagopalan)."],
-            h3 [] [ text "I build things. I'm like Bob the Builder, but for coding. Please hire me." ],
+            h2 [ class "header" ] [ text "Hello hello, I'm Raghav."],
+            h5 [ class "header" ] [ text "(That's short for Raghavprasanna Rajagopalan)" ],
+            h3 [] [ text "I'm a software developer studying at Northeastern University. I build things! (I'm like Bob the Builder, but for coding.) I'm currently on wrapping up my M.S (ye I'm big boi I know) in Computer Science, specializing in Artificial Intelligence. I just graduated from Northeastern with a B.S. in Computer Science and Biology this past May!" ],
+            h4 [ class "header" ] [ text "By the way, I'm looking for a job for after I graduate ;)"],
             Views.Components.Links.view ], 
-        div [ class "row" ] [
-            h3 [] [ text "I'm currently on wrapping up my M.S (ye I'm big boi I know) in Computer Science at Northeastern University. I just graduated from Northeastern with a B.S. in Computer Science and Biology this past May!" ]],
         div [ class "row" ] [ 
             br [][], 
             h3 [ class "nav-heading" ] [ text "Where I've worked" ],

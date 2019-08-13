@@ -32,7 +32,7 @@ projects = [
         { 
             title = "meta-api", 
             blurb = "The backend for some Slack apps of mine at the moment", 
-            description = "Slack is a super fun way to communicate with team members - even the Free tier version of Slack has a lot of great features, like allowing you to build and add your own apps to get more out of it. It's so good that my friend group uses it as our messaging platform and we've done a number of customizations to get what we want. One feature the free tier doesn't support is managing user groups. That is, being able to write a message that tags the engineers on your team and notifies them that they were tagged. You'd have to tag each member individually, which is a hassle."
+            description = "Slack is a super fun way to communicate with team members - even the Free tier version of Slack has a lot of great features, like tagging users, threading, creating channels, and allowing you to build and add your own apps to get more out of it. It's so good that my friend group uses it as our messaging platform and we've done a number of customizations to get what we want. One feature the free tier doesn't support is managing user groups. That is, being able to write a message that tags the engineers on your team and notifies them that they were tagged. You'd have to tag each member individually, which is a hassle."
         },
         { 
             title = "league-ai", 

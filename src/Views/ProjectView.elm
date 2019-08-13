@@ -6,14 +6,16 @@ import Html.Attributes exposing (class)
 import Types exposing (..)
 import Content exposing (projects)
 import Views.Components.Menu exposing (view)
+import Views.Components.Link exposing (view)
 
 
 viewProjectEntry: ProjectEntry -> Html Msg
 viewProjectEntry projectEntry =
     div [] [ 
-        h2 [] [ text projectEntry.title ], 
+        h2 [ class "header" ] [ text projectEntry.title ], 
         div [] [
-            p [] [text projectEntry.description]]]
+            p [] [text projectEntry.description]],
+        Views.Components.Link.view (String.append "https://github.com/raghavp96/" projectEntry.title) (String.append (String.append "Check " projectEntry.title) " out on GitHub.")]
 
 viewProjectEntryList: List ProjectEntry -> Html Msg
 viewProjectEntryList projectEntries =
