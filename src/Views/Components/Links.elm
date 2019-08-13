@@ -11,7 +11,7 @@ view =
     div [] [
         Views.Components.Link.view "https://github.com/raghavp96/" "Github",
         text " / ",
-        Views.Components.Link.view "www.linkedin.com/in/raghavp96" "LinkedIn",
+        Views.Components.Link.view "https://www.linkedin.com/in/raghavp96/" "LinkedIn",
         text " / ",
         Views.Components.Link.view "mailto:rajagopalan.rag@husky.neu.edu" "Email",
         text " / ",

@@ -1,6 +1,6 @@
 module Views.WorkView exposing (..)
 
-import Html exposing (Html, text, div, h2, h3, p)
+import Html exposing (Html, text, div, h2, h3, p, br)
 import Html.Attributes exposing (class)
 
 import Types exposing (..)
@@ -25,6 +25,7 @@ view : Model -> Html Msg
 view model =
     div [ class "wrapper" ] [
         Views.Components.Menu.view,
+        br [][], 
         viewWorkExperienceList Content.workExperience ]
 
 viewDocument : Model -> Document Msg

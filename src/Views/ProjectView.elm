@@ -1,6 +1,6 @@
 module Views.ProjectView exposing (..)
 
-import Html exposing (Html, text, div, h2, p)
+import Html exposing (Html, text, div, h2, p, br)
 import Html.Attributes exposing (class)
 
 import Types exposing (..)
@@ -24,6 +24,7 @@ view : Model -> Html Msg
 view model =
     div [ class "wrapper" ] [ 
         Views.Components.Menu.view,
+        br [][], 
         viewProjectEntryList Content.projects ]
 
 viewDocument : Model -> Document Msg

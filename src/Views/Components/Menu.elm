@@ -1,6 +1,6 @@
 module Views.Components.Menu exposing (..)
 
-import Html exposing (Html, text, ul, a, li)
+import Html exposing (Html, text, div, ul, a, li)
 import Html.Attributes exposing (href, class)
 
 import Types exposing (..)
