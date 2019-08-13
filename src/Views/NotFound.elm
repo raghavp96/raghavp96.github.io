@@ -1,17 +1,17 @@
 module Views.NotFound exposing (..)
 
-import Html exposing (Html, text, div, h2, h3, h4, p, button, ul, a, li, img)
-import Html.Attributes exposing (src, href)
-import Html.Events exposing (onClick)
+import Html exposing (Html, text, div)
+import Html.Attributes exposing (class)
 
 import Types exposing (..)
+import Views.Components.Menu exposing (view)
+
 
 view : Model -> Html Msg
 view model =
-    div []
-        -- [ button [onClick (Redirect DefaultRoute)] [text "Home"]
-        [ a [href "/"] [text "Home"]
-        , text "Not a valid route!" ]
+    div [ class "wrapper" ] [
+        Views.Components.Menu.view, 
+        text "Not a valid route!" ]
 
 viewDocument : Model -> Document Msg
 viewDocument model = 
