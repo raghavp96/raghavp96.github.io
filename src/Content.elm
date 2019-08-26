@@ -27,7 +27,7 @@ workExperience = [
             tags = ["Java", "Jenkins", "MySQL", "Reflection"]
         },
         { 
-            title = "College Intern, 2016", 
+            title = "College Intern", 
             company = "Dell EMC", 
             blurb = "Worked with the Proven Program on certification exam document conversion, and both financial and exam security data analysis.", 
             description = [
