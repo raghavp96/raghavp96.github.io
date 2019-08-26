@@ -47,7 +47,7 @@ projects = [
         { 
             title = "bluebikedata", 
             blurb = " A website, API, and database for blue bike data", 
-            description = "Bluebikes is a public bikeshare service in Boston, MA. They're super convenient! In this project, we poll live JSON data that Bluebike at a given interval, and aggregate that data to get insights about bike station usage. We've ported trip data that they release every quarted into tables in our RDBMS. Storing all this data, we expose a REST API that users can connect with to make their own insights, but we provide our own as well on our site! (I had to take down the site because I ran out of my $300 Google Cloud credit.",
+            description = "Bluebikes is a public bikeshare service in Boston, MA. They're super convenient! In this project, we poll live JSON data that Bluebike at a given interval, and aggregate that data to get insights about bike station usage. We've ported trip data that they release every quarted into tables in our RDBMS. Storing all this data, we expose a REST API that users can connect with to make their own insights, but we provide our own as well on our site, where we use Tableau to answer different questions we had! (Had to take down the site because I ran out of my $300 Google Cloud credit, but the GitHub README has some nice examples)",
             tags = ["Python", "Flask", "Google Cloud SQL" , "Microservices", "Docker"]
             },
         { 
