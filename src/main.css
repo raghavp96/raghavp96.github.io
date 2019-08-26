@@ -13,9 +13,9 @@ body {
   font-family: 'Inconsolata';
   margin: 0;
   text-align: center;
-  background-color: #FBF5E8;
+  /* background-color: #FBF5E8; */
   background-color: #F5F3F0;
-  color: #E25A53;
+  /* color: #E25A53; */
   color: #D45F5A;
   text-align: left;
 }
@@ -39,6 +39,8 @@ img {
 .row {
   margin-top: 10%;
   margin-bottom: 10%;
+  width: 60%;
+  height: 40%;
   clear: left;
 }
 
@@ -108,4 +110,38 @@ button:hover {
   display: inline-block;
   font-size: 30px;
   font-weight: bold;
+}
+
+.tag {
+  font-size: 10px;
+  color: #F5F3F0;
+  font-weight: bold;
+}
+
+ul.tag {
+  padding: 0;
+  list-style-type: none;
+}
+
+li.tag {
+  position: relative;
+  float: left;
+  margin-right: 5px;
+}
+
+.tag-rectangle {
+  float: left;
+  padding: 2px;
+  height: 10px;
+  background: #643853;
+}
+
+.entry-component {
+  float: left;
+  clear: both;
+}
+
+.entry {
+  float: left;
+  clear: both;
 }

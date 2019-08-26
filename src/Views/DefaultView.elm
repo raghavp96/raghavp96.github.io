@@ -35,16 +35,17 @@ view model =
             Views.Components.Links.view ], 
         div [ class "row" ] [ 
             br [][], 
-            h3 [ class "nav-heading" ] [ text "Where I've worked" ],
+            h3 [ class "header nav-heading" ] [ text "Where I've worked" ],
             div [ class "nav"]  [ button [ onClick LeftWork ] [ text "<" ]],
-            div [ class "nav-middle" ] [ viewWorkExperienceSnippet (Maybe.withDefault { title = "", company = "", blurb = "", description = "", link = "" } (Array.get model.workIndex (Array.fromList Content.workExperience))) ],
+            div [ class "nav-middle" ] [ viewWorkExperienceSnippet (Maybe.withDefault { title = "", company = "", blurb = "", description = "", link = "", tags = [] } (Array.get model.workIndex (Array.fromList Content.workExperience))) ],
             div [ class "nav" ] [ button [ onClick RightWork ] [ text ">" ]]],
         div [ class "row" ] [ 
             br [][], 
-            h3 [ class "nav-heading" ] [text "What kinds of projects I've done on my own"],
+            h3 [ class "header nav-heading" ] [text "What kinds of projects I've done on my own"],
             div [ class "nav" ]  [ button [ onClick LeftProject ] [ text "<" ]], 
-            div [ class "nav-middle" ] [ viewProjectEntrySnippet (Maybe.withDefault { title = "", blurb = "", description = "" } (Array.get model.projectIndex (Array.fromList Content.projects))) ], 
-            div [ class "nav" ]  [ button [ onClick RightProject ] [ text ">" ]]]]
+            div [ class "nav-middle" ] [ viewProjectEntrySnippet (Maybe.withDefault { title = "", blurb = "", description = "", tags = [] } (Array.get model.projectIndex (Array.fromList Content.projects))) ], 
+            div [ class "nav" ]  [ button [ onClick RightProject ] [ text ">" ]]],
+            br [][]]
 
 viewDocument : Model -> Document Msg
 viewDocument model = 

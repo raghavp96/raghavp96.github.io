@@ -1,21 +1,23 @@
 module Views.ProjectView exposing (..)
 
-import Html exposing (Html, text, div, h2, p, br)
+import Html exposing (Html, text, div, h2, p, br, ul, li)
 import Html.Attributes exposing (class)
 
 import Types exposing (..)
 import Content exposing (projects)
 import Views.Components.Menu exposing (view)
 import Views.Components.Link exposing (view)
+import Views.Components.Tag exposing (viewTag)
 
 
 viewProjectEntry: ProjectEntry -> Html Msg
 viewProjectEntry projectEntry =
-    div [] [ 
+    div [ class "entry" ] [ 
         h2 [ class "header" ] [ text projectEntry.title ], 
-        div [] [
+        div [ class "entry-component" ] [
             p [] [text projectEntry.description]],
-        Views.Components.Link.view (String.append "https://github.com/raghavp96/" projectEntry.title) (String.append (String.append "Check " projectEntry.title) " out on GitHub.")]
+        div [ class "entry-component" ] [Views.Components.Link.view (String.append "https://github.com/raghavp96/" projectEntry.title) (String.append (String.append "Check " projectEntry.title) " out on GitHub.")],
+        div [ class "entry-component" ] [ ul [ class "tag" ] (List.map (\item -> li [ class "tag" ] [ Views.Components.Tag.viewTag item ]) projectEntry.tags)]]
 
 viewProjectEntryList: List ProjectEntry -> Html Msg
 viewProjectEntryList projectEntries =
