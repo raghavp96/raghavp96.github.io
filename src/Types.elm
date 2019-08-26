@@ -12,7 +12,7 @@ type Msg
     = LeftWork | RightWork | LeftProject | RightProject | LinkClicked Browser.UrlRequest | UrlChanged Url.Url
 
 type alias WorkExperienceEntry = 
-    { title : String, company : String, blurb: String, description : String, link : String, tags : List String }
+    { title : String, company : String, blurb: String, description : List String, link : String, tags : List String }
 
 type alias ProjectEntry = 
     { title : String, blurb: String, description : String, tags : List String }

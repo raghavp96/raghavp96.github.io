@@ -15,8 +15,7 @@ viewWorkExperience workExperienceEntry =
     div [ class "entry" ] [ 
         h2 [ class "header" ] [ text workExperienceEntry.company ], 
         h3 [] [ text workExperienceEntry.title ], 
-        div [ class "entry-component" ] [
-            p [] [ text workExperienceEntry.description ]],
+        div [ class "entry-component" ] (List.map (\item -> p [] [ text item ]) workExperienceEntry.description ),
         div [ class "entry-component" ] [ ul [ class "tag" ] (List.map (\item -> li [ class "tag" ] [ Views.Components.Tag.viewTag item ]) workExperienceEntry.tags)]]
 
 viewWorkExperienceList: List WorkExperienceEntry -> Html Msg

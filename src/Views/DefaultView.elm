@@ -37,7 +37,7 @@ view model =
             br [][], 
             h3 [ class "header nav-heading" ] [ text "Where I've worked" ],
             div [ class "nav"]  [ button [ onClick LeftWork ] [ text "<" ]],
-            div [ class "nav-middle" ] [ viewWorkExperienceSnippet (Maybe.withDefault { title = "", company = "", blurb = "", description = "", link = "", tags = [] } (Array.get model.workIndex (Array.fromList Content.workExperience))) ],
+            div [ class "nav-middle" ] [ viewWorkExperienceSnippet (Maybe.withDefault { title = "", company = "", blurb = "", description = [""], link = "", tags = [] } (Array.get model.workIndex (Array.fromList Content.workExperience))) ],
             div [ class "nav" ] [ button [ onClick RightWork ] [ text ">" ]]],
         div [ class "row" ] [ 
             br [][], 
