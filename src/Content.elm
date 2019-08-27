@@ -12,7 +12,7 @@ workExperience = [
             description = [
                 "In my second co-op I launched a platform-wide orchestration service leveraging AWS Step Function to modify data and resources across the components and services that make up Quickbooks Online (QBO). This was done to help QBO meet GDPR compliance, and I worked with a small subset of my team over the course of my co-op to get this done. This was the first time I had worked with Python, Docker, AWS, and I learned a lot from my time here. Since this was a new project starting from scratch I also helped a lot with setting up builds, logging tools, and automating the code pipeline and test suites as much as possible.", 
                 "The first thing I worked on involved an expired SSL cert in the QBO Truststore and Keystore; there was no easy way to tell what certs were used for what service, when they expired, etc. I had to use Java keytool to help figure out which cert was the issue. Hitting this problem a second time, I led an initiative to redesign how we managed these CA certs and worked to externalize the trust store so we could easily rotate certs without rebuilding QBO."], 
-            link = "intuit.com",
+            link = "https://www.intuit.com/",
             tags = ["Java", "Python", "AWS S3", "AWS Lambda", "AWS Step Function", "CircleCI", "Jenkins", "Docker", "GraphQL", "Keytool"]
         },
         { 
@@ -23,7 +23,7 @@ workExperience = [
                 "This was my first coop! I was just a newborn babe tasked with creating a monitoring tool that collected different stats about our application servers whenever they being performance tested. I learned about a lot of unique things in J2EE, like JMX and MXBeans (which I used to monitor the JVMs). The tool was used by DBA team. There was some aspect of this project related to SQL but I can't remember what :( (sadbois).",
                 "Charles River releases a web API for their clients to connect to, but it seemed like the API was breaking too frequently, which led to lots of customer questions about the API. I got to work on building an API verifier that enforced backwards compatibility using Java's Reflection library to compare the changed API and the current version and integrated this into the build process, so breaking API changes wouldn't build successfully.",
                 "(IIRC, I compare the two versions of the API by essentially creating a graph of each API (classes are nodes, and edges between two nodes occur when a class has a public variable with that type or a public method with that type in the signature), checking that the new graph preserves all the edges in the current graph.)"],
-            link = "crd.com",
+            link = "https://www.crd.com/",
             tags = ["Java", "Jenkins", "MySQL", "Reflection"]
         },
         { 
@@ -33,7 +33,7 @@ workExperience = [
             description = [
                 "My first ever internship was with EMC's Educational Services. This role was more business-oriented than software development-focused, but I was still able to apply problem solving skills I learned from my courses to build some tools to automate my work. I built a tool in Java that formatted provided text fields into a Word document that followed the new standard. I used my tool to convert all 70 of the Proven Program certification curricula.",
                 "I moved to more analyical-style projects, analyzing monthly invoices to learn more about where the biggest expenditures were, as well as studying anonymized answer patterns to certification exams to detect cheating. This was my first exposure to a little bit of the R language."], 
-            link = "education.emc.com",
+            link = "https://education.emc.com",
             tags = ["Java", "Excel", "AccessDB" ]
         }
     ]

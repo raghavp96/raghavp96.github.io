@@ -1,19 +1,19 @@
 module Views.WorkView exposing (..)
 
-import Html exposing (Html, text, div, h2, h3, p, br, ul, li)
-import Html.Attributes exposing (class)
+import Html exposing (Html, text, div, h2, h3, p, br, ul, li, a)
+import Html.Attributes exposing (class, href)
 
 import Types exposing (..)
 import Content exposing (projects)
 import Views.Components.Menu exposing (view)
 import Views.Components.Tag exposing (viewTag)
-
+import Views.Components.Link exposing (view)
 
 
 viewWorkExperience: WorkExperienceEntry -> Html Msg
 viewWorkExperience workExperienceEntry =
     div [ class "entry" ] [ 
-        h2 [ class "header" ] [ text workExperienceEntry.company ], 
+        h2 [ class "header" ] [ Views.Components.Link.view workExperienceEntry.link workExperienceEntry.company ], 
         h3 [] [ text workExperienceEntry.title ], 
         div [ class "entry-component" ] (List.map (\item -> p [] [ text item ]) workExperienceEntry.description ),
         div [ class "entry-component" ] [ ul [ class "tag" ] (List.map (\item -> li [ class "tag" ] [ Views.Components.Tag.viewTag item ]) workExperienceEntry.tags)]]

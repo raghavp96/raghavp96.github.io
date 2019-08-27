@@ -56,6 +56,10 @@ img {
   color: #643853;
 }
 
+.nav-heading:hover {
+  color: #D45F5A;
+}
+
 .nav-middle {
   position: relative;
   float: left;
@@ -65,11 +69,13 @@ img {
 }
 
 a {
+  color: #643853;
   text-decoration: underline;
   text-decoration-style: double;
 }
 
 a:hover {
+  color: #D45F5A;
   text-decoration: underline;
   text-decoration-style: double;
 }
@@ -89,6 +95,17 @@ li.menu {
   font-family: 'Lato';
 }
 
+.header a {
+  color: #643853;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #D45F5A;
+  text-decoration: none;
+}
+
+
 button {
   border: none;
   color: #643853;
@@ -103,7 +120,7 @@ button {
 
 button:hover {
   border: none;
-  color: #643853;
+  color: #D45F5A;
   padding: 5px 10px;
   text-align: center;
   text-decoration: none;

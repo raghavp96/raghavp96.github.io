@@ -1,7 +1,7 @@
 module Views.DefaultView exposing (..)
 
 import Array
-import Html exposing (Html, text, div, br, h2, h3, h4, h5, button)
+import Html exposing (Html, text, div, br, h2, h3, h4, h5, button, a)
 import Html.Attributes exposing (src, href, class)
 import Html.Events exposing (onClick)
 
@@ -9,6 +9,7 @@ import Types exposing (..)
 import Content exposing (workExperience, projects)
 import Views.Components.Menu exposing (view)
 import Views.Components.Links exposing (view)
+import Views.Components.Link exposing (view)
 
 viewWorkExperienceSnippet: WorkExperienceEntry -> Html Msg
 viewWorkExperienceSnippet workExperienceEntry = 
@@ -35,13 +36,13 @@ view model =
             Views.Components.Links.view ], 
         div [ class "row" ] [ 
             br [][], 
-            h3 [ class "header nav-heading" ] [ text "Where I've worked" ],
+            h3 [ class "header nav-heading" ]  [ Views.Components.Link.view "/work" "Work Experience (A Snippet)" ],
             div [ class "nav"]  [ button [ onClick LeftWork ] [ text "<" ]],
             div [ class "nav-middle" ] [ viewWorkExperienceSnippet (Maybe.withDefault { title = "", company = "", blurb = "", description = [""], link = "", tags = [] } (Array.get model.workIndex (Array.fromList Content.workExperience))) ],
             div [ class "nav" ] [ button [ onClick RightWork ] [ text ">" ]]],
         div [ class "row" ] [ 
             br [][], 
-            h3 [ class "header nav-heading" ] [text "What kinds of projects I've done on my own"],
+            h3 [ class "header nav-heading" ] [ Views.Components.Link.view "/project" "Projects (A Snippet)" ],
             div [ class "nav" ]  [ button [ onClick LeftProject ] [ text "<" ]], 
             div [ class "nav-middle" ] [ viewProjectEntrySnippet (Maybe.withDefault { title = "", blurb = "", description = "", tags = [] } (Array.get model.projectIndex (Array.fromList Content.projects))) ], 
             div [ class "nav" ]  [ button [ onClick RightProject ] [ text ">" ]]],
