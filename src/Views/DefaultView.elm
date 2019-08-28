@@ -2,7 +2,7 @@ module Views.DefaultView exposing (..)
 
 import Array
 import Html exposing (Html, text, div, br, h2, h3, h4, h5, button, a, img)
-import Html.Attributes exposing (src, href, class)
+import Html.Attributes exposing (src, href, class, width, height)
 import Html.Events exposing (onClick)
 
 import Types exposing (..)
@@ -50,7 +50,7 @@ view model =
         div [ class "row" ] [
             br [][],
             h3 [ class "header" ] [ text "More about me" ],
-            div [ class "about" ] [ img [ src "/img/me.JPG" ] []],
+            div [ class "about" ] [ img [ src "/img/me.JPG", width 250, height 319] []],
             Views.Components.ListAsParagraph.view Content.about],
         br [][]]
 

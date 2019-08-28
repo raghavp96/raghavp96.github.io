@@ -39,7 +39,7 @@ img {
 .row {
   margin-top: 10%;
   margin-bottom: 10%;
-  width: 60%;
+  width: 80%;
   height: 40%;
   clear: left;
 }
@@ -49,6 +49,7 @@ img {
   float: left;
   width: 20%;
   height: 40%;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -167,4 +168,8 @@ li.tag {
 .about {
   float: left;
   margin-right: 5%;
+}
+
+.about-content {
+  margin-top: 6%;
 }
