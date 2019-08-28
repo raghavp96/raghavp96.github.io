@@ -1,3 +1,3 @@
 module.exports = {
-    homepage: "https://raghavprasanna.io/",
+    homepage: "https://raghavp96.github.io/site",
 }
