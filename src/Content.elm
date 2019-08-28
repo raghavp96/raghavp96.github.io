@@ -6,7 +6,7 @@ cs_language_tags = ["Python", "Java", "Racket", "R", "Elm", "SQL", "HTML", "CSS"
 
 workExperience = [
         { 
-            title = "Software Engineering Co-op, 2018", 
+            title = "Software Engineering Co-op (2018)", 
             company = "Intuit, Inc.", 
             blurb = "Worked with the Voyager Team to launch a platform-wide orchestration service leveraging AWS, and led redesign of the trust store management process.", 
             description = [
@@ -16,7 +16,7 @@ workExperience = [
             tags = ["Java", "Python", "AWS S3", "AWS Lambda", "AWS Step Function", "CircleCI", "Jenkins", "Docker", "GraphQL", "Keytool"]
         },
         { 
-            title = "Software Engineering Co-op, 2017", 
+            title = "Software Engineering Co-op (2017)", 
             company = "Charles River Development", 
             blurb = "Worked with the Java Frameworks Team, designed and built a tool to easily collect data from a cluster of application servers, and also built an API-agnostic backwards compatibility enforcer.", 
             description = [
@@ -27,7 +27,7 @@ workExperience = [
             tags = ["Java", "Jenkins", "MySQL", "Reflection"]
         },
         { 
-            title = "College Intern, 2016", 
+            title = "College Intern (2016)", 
             company = "Dell EMC", 
             blurb = "Worked with the Proven Program on certification exam document conversion, and both financial and exam security data analysis.", 
             description = [
