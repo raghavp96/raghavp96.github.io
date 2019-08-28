@@ -15,6 +15,8 @@ In the project directory you can run:
 
 - `elm-app test` : Runs tests with [node-test-runner](https://github.com/rtfeldman/node-test-runner/tree/master)
 
+- Deploy build to Github Pages: `git subtree push --prefix build origin gh-pages`
+
 ## Dead code elimination
 
 Create Elm App comes with an setup for dead code elimination which relies on the elm compiler flag `--optimize` and `uglifyjs`.
