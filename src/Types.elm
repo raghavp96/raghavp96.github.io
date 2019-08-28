@@ -18,7 +18,7 @@ type alias ProjectEntry =
     { title : String, blurb: String, description : String, tags : List String }
 
 type Route
-    = DefaultRoute | WorkRoute | ProjectRoute | NotFoundRoute
+    = DefaultRoute | WorkRoute | ProjectRoute | InterestRoute | NotFoundRoute
 
 type alias Model =
     { key : Nav.Key
