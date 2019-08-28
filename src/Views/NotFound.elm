@@ -17,4 +17,4 @@ view model =
 
 viewDocument : Model -> Document Msg
 viewDocument model = 
-    { title = "Raghav Work", body = [ view model ]}
+    { title = "Not Found", body = [ view model ]}

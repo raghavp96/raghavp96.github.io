@@ -11,9 +11,10 @@ import Views.NotFound exposing (viewDocument)
 routeParser : Parser (Route -> a) a
 routeParser =
   oneOf
-    [ map DefaultRoute          top
-    , map WorkRoute             (s "work")
-    , map ProjectRoute          (s "project")
+    [ 
+        map DefaultRoute          top, 
+        map WorkRoute             (s "work"), 
+        map ProjectRoute          (s "project")
     ]
 
 view : Model -> Document Msg
