@@ -2,50 +2,6 @@
 
 This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
 
-Below you will find some information on how to perform basic tasks.
-You can find the most recent version of this guide [here](https://github.com/halfzebra/create-elm-app/blob/master/template/README.md).
-
-
-## Installing Elm packages
-
-```sh
-elm-app install <package-name>
-```
-
-Other `elm-package` commands are also [available].(#package)
-
-
-## Folder structure
-
-```sh
-my-app/
-├── .gitignore
-├── README.md
-├── elm.json
-├── elm-stuff
-├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   ├── logo.svg
-│   └── manifest.json
-├── src
-│   ├── Main.elm
-│   ├── index.js
-│   ├── main.css
-│   └── serviceWorker.js
-└── tests
-    └── Tests.elm
-```
-
-For the project to build, these files must exist with exact filenames:
-
-* `public/index.html` is the page template;
-* `public/favicon.ico` is the icon you see in the browser tab;
-* `src/index.js` is the JavaScript entry point.
-
-You can delete or rename the other files.
-
-You may create subdirectories inside src.
 
 ## Available scripts
 
