@@ -1,4 +1,4 @@
-module Content exposing (workExperience, projects)
+module Content exposing (workExperience, projects, about)
 
 import Types exposing (..)
 
@@ -64,3 +64,7 @@ projects = [
             tags = ["Docker"]
         }
     ]
+
+about = [
+    "yeeto",
+    "yeeto"]

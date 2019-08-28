@@ -1,15 +1,16 @@
 module Views.DefaultView exposing (..)
 
 import Array
-import Html exposing (Html, text, div, br, h2, h3, h4, h5, button, a)
+import Html exposing (Html, text, div, br, h2, h3, h4, h5, button, a, img)
 import Html.Attributes exposing (src, href, class)
 import Html.Events exposing (onClick)
 
 import Types exposing (..)
-import Content exposing (workExperience, projects)
+import Content exposing (workExperience, projects, about)
 import Views.Components.Menu exposing (view)
 import Views.Components.Links exposing (view)
 import Views.Components.Link exposing (view)
+import Views.Components.ListAsParagraph exposing (view)
 
 viewWorkExperienceSnippet: WorkExperienceEntry -> Html Msg
 viewWorkExperienceSnippet workExperienceEntry = 
@@ -46,7 +47,12 @@ view model =
             div [ class "nav" ]  [ button [ onClick LeftProject ] [ text "<" ]], 
             div [ class "nav-middle" ] [ viewProjectEntrySnippet (Maybe.withDefault { title = "", blurb = "", description = "", tags = [] } (Array.get model.projectIndex (Array.fromList Content.projects))) ], 
             div [ class "nav" ]  [ button [ onClick RightProject ] [ text ">" ]]],
-            br [][]]
+        div [ class "row" ] [
+            br [][],
+            h3 [ class "header" ] [ text "More about me" ],
+            div [ class "about" ] [ img [ src "/img/me.JPG" ] []],
+            Views.Components.ListAsParagraph.view Content.about],
+        br [][]]
 
 viewDocument : Model -> Document Msg
 viewDocument model = 

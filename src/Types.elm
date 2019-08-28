@@ -17,6 +17,8 @@ type alias WorkExperienceEntry =
 type alias ProjectEntry = 
     { title : String, blurb: String, description : String, tags : List String }
 
+type alias AboutEntry = List String
+
 type Route
     = DefaultRoute | WorkRoute | ProjectRoute | InterestRoute | NotFoundRoute
 

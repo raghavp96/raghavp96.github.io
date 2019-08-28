@@ -163,3 +163,8 @@ li.tag {
   float: left;
   clear: both;
 }
+
+.about {
+  float: left;
+  margin-right: 5%;
+}
