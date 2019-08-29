@@ -165,9 +165,15 @@ li.tag {
 
 .about {
   float: left;
-  margin-right: 5%;
+  margin: 3%;
+}
+
+.about img {
+  max-width: 250px;
+  margin-top: 0%;
 }
 
 .about-content {
-  margin-top: 6%;
+  position: relative;
+  float: left;
 }
