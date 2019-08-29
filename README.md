@@ -15,7 +15,11 @@ In the project directory you can run:
 
 - `elm-app test` : Runs tests with [node-test-runner](https://github.com/rtfeldman/node-test-runner/tree/master)
 
-- Deploy build to Github Pages: `git subtree push --prefix build origin gh-pages`
+
+## Build, Push, Deploy
+- `elm-app build`
+- git add, commit, push to master
+- `gh-pages -d build`: Deploy build to Github Pages (`gh-pages` branch): 
 
 ## Dead code elimination
 
