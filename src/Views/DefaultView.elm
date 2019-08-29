@@ -50,7 +50,7 @@ view model =
         div [ class "row" ] [
             br [][],
             h3 [ class "header" ] [ text "About me" ],
-            div [ class "about" ] [ img [ src "/img/me.JPG", width 250, height 319] []],
+            div [ class "about" ] [ img [ src "me.JPG", width 250, height 319] []],
             Views.Components.ListAsParagraph.view Content.about],
         br [][]]
 
