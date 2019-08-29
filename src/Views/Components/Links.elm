@@ -9,7 +9,7 @@ import Views.Components.Link exposing (view)
 view : Html Msg
 view =
     div [] [
-        Views.Components.Link.view "/resume.pdf" "Resume",
+        Views.Components.Link.view "resume.pdf" "Resume",
         text " / ",
         Views.Components.Link.view "https://github.com/raghavp96/" "Github",
         text " / ",
