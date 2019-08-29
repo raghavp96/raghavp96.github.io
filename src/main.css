@@ -10,13 +10,11 @@
 }
 
 body {
-  font-family: 'Inconsolata';
+  font-family: 'Lato';
   margin: 0;
   text-align: center;
-  /* background-color: #FBF5E8; */
   background-color: #F5F3F0;
-  /* color: #E25A53; */
-  color: #D45F5A;
+  color: #643853;
   text-align: left;
 }
 
@@ -54,11 +52,11 @@ img {
 }
 
 .nav-heading {
-  color: #643853;
+  color: #D45F5A;
 }
 
 .nav-heading:hover {
-  color: #D45F5A;
+  color: #643853;
 }
 
 .nav-middle {
@@ -70,13 +68,13 @@ img {
 }
 
 a {
-  color: #643853;
+  color: #D45F5A;
   text-decoration: underline;
   text-decoration-style: double;
 }
 
 a:hover {
-  color: #D45F5A;
+  color: #643853;
   text-decoration: underline;
   text-decoration-style: double;
 }
@@ -92,17 +90,17 @@ li.menu {
 }
 
 .header {
-  color: #643853;
-  font-family: 'Lato';
+  color: #D45F5A;
+  font-family: 'Inconsolata';
 }
 
 .header a {
-  color: #643853;
+  color: #D45F5A;
   text-decoration: none;
 }
 
 .header a:hover {
-  color: #D45F5A;
+  color: #643853;
   text-decoration: none;
 }
 
