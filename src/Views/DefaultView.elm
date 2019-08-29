@@ -32,8 +32,8 @@ view model =
             br [][], 
             h2 [ class "header" ] [ text "Hello hello, I'm Raghav."],
             h5 [ class "header" ] [ text "(That's short for Raghavprasanna Rajagopalan)" ],
-            h3 [] [ text "I'm a software developer studying at Northeastern University. I build things! (I'm like Bob the Builder, but for coding.) I'm currently on wrapping up my M.S (ye I'm big boi I know) in Computer Science, specializing in Artificial Intelligence. I just graduated from Northeastern with a B.S. in Computer Science and Biology this past May!" ],
-            h4 [ class "header" ] [ text "By the way, I'm looking for a job for after I graduate ;)"],
+            h3 [] [ text "I'm a software developer studying at Northeastern University. I build things! I'm currently on wrapping up my M.S in Computer Science, specializing in Artificial Intelligence. I just graduated from Northeastern with a B.S. in Computer Science and Biology this past May!" ],
+            h4 [ class "header" ] [ text "By the way, I'm looking for a job for after I graduate!"],
             Views.Components.Links.view ], 
         div [ class "row" ] [ 
             br [][], 
