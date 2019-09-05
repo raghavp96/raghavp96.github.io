@@ -19,8 +19,8 @@ In the project directory you can run:
 ## Build, Push, Deploy
 - I've configured two remotes:
     ```
-    origin	https://github.com/raghavp96/home.git (fetch)
-    origin	https://github.com/raghavp96/home.git (push)
+    origin	https://github.com/raghavp96/website.git (fetch)
+    origin	https://github.com/raghavp96/website.git (push)
     public	https://github.com/raghavp96/raghavp96.github.io.git (fetch)
     public	https://github.com/raghavp96/raghavp96.github.io.git (push)
     ```
