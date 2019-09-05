@@ -14,7 +14,6 @@ routeParser =
   oneOf
     [ 
         map DefaultRoute          top, 
-        map DefaultRoute          (s "home"), 
         map WorkRoute             (s "work"), 
         map ProjectRoute          (s "project"),
         map InterestRoute         (s "interest")
