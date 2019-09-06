@@ -1,6 +1,6 @@
-# Elm App
+# Website
 
-This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
+This is my website, written in Elm! This is my first extensive project with Elm and I learned a lot - there's still a lot of stuff I don't know, but it's a start `:)`. This project is bootstrapped with [Create Elm App](https://github.com/halfzebra/create-elm-app).
 
 
 ## Available scripts
@@ -25,10 +25,8 @@ In the project directory you can run:
     public	https://github.com/raghavp96/raghavp96.github.io.git (push)
     ```
 
-- I want to not have to deal with building the app and pushing the build output to Github, but GithubPages requires it. the public remote is then where I want to push that, keeping it away from the source code.
+- I want to not have to deal with building the app and pushing the build output to Github on my `master` branch, but Github Pages requires it (otherwise I wouldn't be able to use the default user namespace for my website). The `public` remote's master branch is where I push the build output, keeping it away from the source code (which remains in `origin master`.
 
-- To push then - we run `./deploy.sh`, which will push to origin master and also push the build folder to public remote's master.
-
-## Dead code elimination
-
-Create Elm App comes with an setup for dead code elimination which relies on the elm compiler flag `--optimize` and `uglifyjs`.
+- To push then - we run `./deploy.sh`, which will:
+    - push the committed source code to `origin master` 
+    - build the project with `elm-app build`, push the build folder to `public master`
