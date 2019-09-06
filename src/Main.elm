@@ -17,10 +17,11 @@ import Routing exposing (view)
 main : Program () Model Msg
 main =
     Browser.application
-        { init = init
-        , view = view
-        , update = update
-        , subscriptions = always Sub.none
-        , onUrlChange = UrlChanged
-        , onUrlRequest = LinkClicked
+        { 
+            init = init, 
+            view = view, 
+            update = update, 
+            subscriptions = always Sub.none, 
+            onUrlChange = UrlChanged, 
+            onUrlRequest = LinkClicked
         }
