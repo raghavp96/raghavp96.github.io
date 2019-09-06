@@ -23,8 +23,9 @@ type Route
     = DefaultRoute | WorkRoute | ProjectRoute | InterestRoute | NotFoundRoute
 
 type alias Model =
-    { key : Nav.Key
-    , url : Url.Url
-    , workIndex : Int
-    , projectIndex : Int
+    { 
+        key : Nav.Key, 
+        url : Url.Url, 
+        workIndex : Int, 
+        projectIndex : Int
     }
