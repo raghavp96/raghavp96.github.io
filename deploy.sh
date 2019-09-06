@@ -5,7 +5,7 @@ git push origin master
 
 # Build the app, and move all built output to raghavp96.github.io folder (it's a repo so it has its own git tracking)
 elm-app build
-mv build/* raghavp96.github.io/
+cp -r build/* raghavp96.github.io/
 rm -rf build
 cd raghavp96.github.io
 git add .
