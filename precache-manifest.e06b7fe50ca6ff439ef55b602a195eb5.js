@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./me.JPG"
   },
   {
-    "revision": "75bf47220fe41c48530e6fb73b215b47",
+    "revision": "93c914483c664d7c9f2433e1e21623bd",
     "url": "./resume.pdf"
   },
   {
