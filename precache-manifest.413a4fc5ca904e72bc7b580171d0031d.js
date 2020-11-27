@@ -1,6 +1,26 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "987da976a8b2a4169346a497ba84749d",
+    "revision": "f1cac3f8f684daac9a9e6337abc7ef55",
+    "url": "./android-chrome-192x192.png"
+  },
+  {
+    "revision": "4872215fd0d39601161a903f7af624e5",
+    "url": "./android-chrome-512x512.png"
+  },
+  {
+    "revision": "8adbd405ad3225f0896a71581b5d8539",
+    "url": "./apple-touch-icon.png"
+  },
+  {
+    "revision": "491cc71ba4b81c13bfdf6f2d50db0e4b",
+    "url": "./favicon-16x16.png"
+  },
+  {
+    "revision": "29ced2a28d670ed4b01e2ac5ced268b7",
+    "url": "./favicon-32x32.png"
+  },
+  {
+    "revision": "925feeb8af856f6da07b47069b4c3c95",
     "url": "./favicon.ico"
   },
   {
@@ -8,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./googleeca8d01f856eb1ec.html"
   },
   {
-    "revision": "f9227b0895e5cc34af960b35cd8b7590",
+    "revision": "95006169a5485c9f36f5f53f760940ed",
     "url": "./index.html"
   },
   {
@@ -32,12 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./resume.pdf"
   },
   {
-    "revision": "f5a3b6b5fb3b5574b4d8",
+    "revision": "053100cb84a50d2ae7f5492f7dd7f25e",
+    "url": "./site.webmanifest"
+  },
+  {
+    "revision": "c27c6fa760d75127740d",
     "url": "./static/css/main.11b9f28d.chunk.css"
   },
   {
-    "revision": "f5a3b6b5fb3b5574b4d8",
-    "url": "./static/js/main.f5a3b6b5.chunk.js"
+    "revision": "c27c6fa760d75127740d",
+    "url": "./static/js/main.c27c6fa7.chunk.js"
   },
   {
     "revision": "d5752d2fdce3c7e150f5",

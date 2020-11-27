@@ -1,12 +1,17 @@
 {
   "main.css": "./static/css/main.11b9f28d.chunk.css",
-  "main.js": "./static/js/main.f5a3b6b5.chunk.js",
-  "main.js.map": "./static/js/main.f5a3b6b5.chunk.js.map",
+  "main.js": "./static/js/main.c27c6fa7.chunk.js",
+  "main.js.map": "./static/js/main.c27c6fa7.chunk.js.map",
   "runtime~main.js": "./static/js/runtime~main.d5752d2f.js",
   "runtime~main.js.map": "./static/js/runtime~main.d5752d2f.js.map",
   "vendors~main.js": "./static/js/vendors~main.3ca81432.chunk.js",
   "vendors~main.js.map": "./static/js/vendors~main.3ca81432.chunk.js.map",
   "./service-worker.js": "././service-worker.js",
+  "android-chrome-192x192.png": "./android-chrome-192x192.png",
+  "android-chrome-512x512.png": "./android-chrome-512x512.png",
+  "apple-touch-icon.png": "./apple-touch-icon.png",
+  "favicon-16x16.png": "./favicon-16x16.png",
+  "favicon-32x32.png": "./favicon-32x32.png",
   "favicon.ico": "./favicon.ico",
   "googleeca8d01f856eb1ec.html": "./googleeca8d01f856eb1ec.html",
   "index.html": "./index.html",
@@ -14,6 +19,7 @@
   "manifest.json": "./manifest.json",
   "me.JPG": "./me.JPG",
   "me2.JPG": "./me2.JPG",
-  "precache-manifest.a17cf4ba566cb78d44b261c8c715f43d.js": "./precache-manifest.a17cf4ba566cb78d44b261c8c715f43d.js",
-  "resume.pdf": "./resume.pdf"
+  "precache-manifest.413a4fc5ca904e72bc7b580171d0031d.js": "./precache-manifest.413a4fc5ca904e72bc7b580171d0031d.js",
+  "resume.pdf": "./resume.pdf",
+  "site.webmanifest": "./site.webmanifest"
 }
